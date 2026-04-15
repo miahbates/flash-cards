@@ -1,15 +1,18 @@
-const sampleCards = [
+const instructions = [
   {
     id: 1,
-    name: "Dummy card one",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus.",
+    name: "Add a tag",
+    description: "Add a tag to your flash card to categorise it.",
   },
   {
     id: 2,
-    name: "Dummy card two",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris.",
+    name: "Add a card",
+    description: "Add a new flash card to your collection.",
+  },
+  {
+    id: 3,
+    name: "Review cards",
+    description: "Review your flash cards to reinforce your learning.",
   },
 ];
 
@@ -23,11 +26,11 @@ export default function Home() {
       </section>
 
       <section className="cards" aria-label="Starter cards">
-        {sampleCards.map((card) => (
-          <article className="card" key={card.id}>
-            <span>#{card.id}</span>
-            <h2>{card.name}</h2>
-            <p>{card.description}</p>
+        {instructions.map((instruction) => (
+          <article className="card" key={instruction.id}>
+            <span>#{instruction.id}</span>
+            <h2>{instruction.name}</h2>
+            <p>{instruction.description}</p>
           </article>
         ))}
       </section>

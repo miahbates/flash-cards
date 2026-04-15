@@ -7,11 +7,11 @@ describe("Home", () => {
 
     expect(
       screen.getByRole("heading", {
-        name: /build the deck one useful prompt at a time/i,
+        name: /homepage here/i,
       }),
     ).toBeInTheDocument();
     expect(
-      screen.getByRole("heading", { name: /django admin/i, level: 2 }),
+      screen.getByRole("heading", { name: /dummy card one/i, level: 2 }),
     ).toBeInTheDocument();
   });
 });
