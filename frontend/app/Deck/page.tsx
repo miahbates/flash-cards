@@ -13,7 +13,6 @@ export default function DeckPage() {
 
       <DeckCard
         category="GraphQL"
-        position="3 / 8"
         question="What problem does GraphQL solve?"
       />
     </main>

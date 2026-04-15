@@ -21,7 +21,7 @@ export default function Home() {
     <main className="page">
       <section className="intro" aria-labelledby="page-title">
         <p className="eyebrow">Flash cards</p>
-        <h1 id="page-title">Homepage here</h1>
+        <h1 id="page-title">Miah's flash cards</h1>
         <p className="lede">This is a starter project for a flash cards.</p>
       </section>
 
