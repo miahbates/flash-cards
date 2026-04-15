@@ -1,0 +1,49 @@
+<svg width="1440" height="960" viewBox="0 0 1440 960" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1440" height="960" fill="#F6F7F5"/>
+
+  <rect x="64" y="40" width="1312" height="64" rx="8" fill="#FFFFFF" stroke="#E2E5E1"/>
+  <text x="96" y="80" fill="#202522" font-family="Inter, Arial, sans-serif" font-size="21" font-weight="800">Flash Cards</text>
+  <text x="1048" y="80" fill="#202522" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="800">Deck</text>
+  <text x="1136" y="80" fill="#66706A" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700">Add card</text>
+  <text x="1248" y="80" fill="#66706A" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700">Tags</text>
+
+  <text x="96" y="170" fill="#66706A" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="800">STUDY DECK</text>
+  <text x="96" y="232" fill="#202522" font-family="Inter, Arial, sans-serif" font-size="58" font-weight="800">Today’s cards</text>
+  <text x="96" y="274" fill="#66706A" font-family="Inter, Arial, sans-serif" font-size="20">Move through the deck, reveal the answer, and tune cards as you go.</text>
+
+  <rect x="96" y="332" width="820" height="438" rx="8" fill="#FFFFFF" stroke="#E2E5E1"/>
+  <rect x="136" y="372" width="98" height="30" rx="8" fill="#EADFD8"/>
+  <text x="159" y="392" fill="#7A5446" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="800">GraphQL</text>
+  <text x="136" y="476" fill="#202522" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="800">What problem does GraphQL solve?</text>
+  <text x="136" y="536" fill="#66706A" font-family="Inter, Arial, sans-serif" font-size="20">Say your answer first, then reveal the saved explanation.</text>
+
+  <rect x="136" y="614" width="164" height="48" rx="8" fill="#ADC8C1"/>
+  <text x="173" y="645" fill="#173D36" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="800">Reveal</text>
+  <rect x="316" y="614" width="96" height="48" rx="8" fill="#FFFFFF" stroke="#D8DDD9"/>
+  <text x="347" y="645" fill="#48524C" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="800">Edit</text>
+
+  <line x1="136" y1="704" x2="876" y2="704" stroke="#E8EBE7"/>
+  <rect x="136" y="728" width="92" height="42" rx="8" fill="#F6F7F5" stroke="#D8DDD9"/>
+  <text x="166" y="755" fill="#66706A" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="800">Prev</text>
+  <rect x="248" y="728" width="360" height="42" rx="8" fill="#F6F7F5"/>
+  <rect x="248" y="728" width="135" height="42" rx="8" fill="#C7D8B8"/>
+  <text x="400" y="755" fill="#66706A" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="800">3 / 8</text>
+  <rect x="628" y="728" width="92" height="42" rx="8" fill="#F6F7F5" stroke="#D8DDD9"/>
+  <text x="660" y="755" fill="#66706A" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="800">Next</text>
+
+  <rect x="956" y="332" width="388" height="168" rx="8" fill="#202522"/>
+  <text x="996" y="388" fill="#C9D8D3" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="800">PROGRESS</text>
+  <text x="996" y="442" fill="#FFFFFF" font-family="Inter, Arial, sans-serif" font-size="40" font-weight="800">3 of 8</text>
+  <text x="1138" y="442" fill="#A9B2AD" font-family="Inter, Arial, sans-serif" font-size="18">reviewed</text>
+
+  <rect x="956" y="528" width="388" height="242" rx="8" fill="#FFFFFF" stroke="#E2E5E1"/>
+  <text x="996" y="588" fill="#202522" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="800">Categories</text>
+  <rect x="996" y="622" width="98" height="32" rx="8" fill="#EADFD8"/>
+  <text x="1019" y="643" fill="#7A5446" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="800">GraphQL</text>
+  <rect x="1106" y="622" width="86" height="32" rx="8" fill="#DCD6EA"/>
+  <text x="1128" y="643" fill="#5D5279" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="800">Django</text>
+  <rect x="1204" y="622" width="78" height="32" rx="8" fill="#D3E3F0"/>
+  <text x="1225" y="643" fill="#365F78" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="800">React</text>
+  <rect x="996" y="672" width="70" height="32" rx="8" fill="#C7D8B8"/>
+  <text x="1017" y="693" fill="#4C633E" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="800">SQL</text>
+</svg>
