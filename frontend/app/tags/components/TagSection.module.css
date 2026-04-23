@@ -1,0 +1,23 @@
+.tag-section {
+  margin-top: 48px;
+}
+
+.tag-section__header {
+  margin-bottom: 24px;
+}
+
+.tag-section__title {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.tag-section__description {
+  color: #66706a;
+  margin: 12px 0 0;
+}
+
+.tag-section__grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
