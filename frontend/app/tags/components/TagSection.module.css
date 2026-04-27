@@ -11,7 +11,7 @@
   border-radius: 8px;
   padding: 24px;
   width: 100%;
-  height: 200px;
+  height: 250px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.06);  
 }
 
@@ -27,7 +27,13 @@
   margin-top: 8px;
 }
 
-.tagGrid {
+.colorOptions {
+  display: flex;
+  gap: 8px;
+  margin-top: 0;
+}
+
+.existingTags {
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
@@ -122,6 +128,142 @@
       color: #fff;
     }
   }
-
 }
 
+.colorOption {
+  width: 36px;
+  height: 24px;
+  border-radius: 4px;
+
+  &:hover {
+    cursor: pointer;
+  }
+  
+  &[data-color="CLAY"] {
+    background-color: #EAD7CC;
+
+    &[data-selected="true"] {
+      border: 2px solid #A05A2C;
+    }
+
+    &:hover {
+      border: 1px solid #A05A2C;
+    }
+  }
+
+  &[data-color="LAVENDER"] {
+    background-color: #E8D9F1;
+
+    &[data-selected="true"] {
+      border: 2px solid #9B7BAE;
+    }
+
+    &:hover {
+      border: 1px solid #9B7BAE;
+    }
+  }
+
+  &[data-color="MINT"] {
+    background-color: #D7EFE0;
+
+    &[data-selected="true"] {
+      border: 2px solid #5EAD7D;
+    }
+
+    &:hover {
+      border: 1px solid #5EAD7D;
+    }
+  }
+
+  &[data-color="SAGE"] {
+    background-color: #E1E0D1;
+
+    &[data-selected="true"] {
+      border: 2px solid #727156;
+    }
+
+    &:hover {
+      border: 1px solid #727156;
+    }
+  }
+
+  &[data-color="OCHRE"] {
+    background-color: #F0E5B8;
+
+    &[data-selected="true"] {
+      border: 2px solid #A88C1F;
+    }
+
+    &:hover {
+      border: 1px solid #A88C1F;
+    }
+  }
+}
+
+.saveButton {
+  padding: 8px 24px;
+  color: white;
+  background-color: #0f766e;
+  border: 1px solid #0f766e;
+  font-weight: 600;
+  border-radius: 8px;
+
+  &:hover {
+    background-color: #0c5c5a;
+    border-color: #0c5c5a;
+    cursor: pointer;
+  }
+}
+
+.clearButton {
+  padding: 8px 24px;
+  background-color: #ffff;
+  color: #3f4652;
+  border: 1px solid #eef0f3;
+  border-radius: 8px;
+  font-weight: 600;
+
+  &:hover {
+    background-color: #f0f0f0;
+    cursor: pointer;
+  }
+}
+
+.formButtons {
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.colorLabel {
+  margin-bottom: 8px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.tagInput {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f5f5f5;
+
+  &:focus {
+    outline: none;
+    border-color: #0f766e;
+    background-color:  #f5f5f5;
+  }
+}
+
+.tagForm {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
