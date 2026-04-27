@@ -3,11 +3,18 @@
 import { useQuery } from "@apollo/client";
 import { GetAllTags } from "../graphql/queries";
 import TagSection from "./components/TagSection";
+import LoadingState from "@/components/LoadingState/LoadingState";
 
 export default function TagsPage() {
   const { data, loading, error } = useQuery(GetAllTags);
 
-  if (loading) return <p>Loading...</p>;
+  if (loading) {
+    return (
+      <main className="page">
+        <LoadingState text="Loading tags" />
+      </main>
+    );
+  }
 
   if (error) return <p>Error: {error.message}</p>;
 

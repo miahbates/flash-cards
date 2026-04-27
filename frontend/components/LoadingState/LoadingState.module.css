@@ -1,0 +1,43 @@
+.loadingStateWrapper {
+  align-items: center;
+  display: flex;
+  inset: 0;
+  justify-content: center;
+  position: fixed;
+}
+
+.loadingState {
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid #e2e5e1;
+  border-radius: 8px;
+  color: #3f4652;
+  display: inline-flex;
+  font-size: 18px;
+  font-weight: 700;
+  gap: 12px;
+  min-height: 56px;
+  padding: 0 18px;
+}
+
+.spinner {
+  animation: spin 0.8s linear infinite;
+  border: 3px solid #d8ddd9;
+  border-radius: 50%;
+  border-top-color: #0f766e;
+  display: inline-block;
+  height: 22px;
+  width: 22px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .spinner {
+    animation: none;
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
