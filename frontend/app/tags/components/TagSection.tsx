@@ -2,6 +2,8 @@ import { Tag } from "@/app/types";
 import styles from "./TagSection.module.css";
 import { useState } from "react";
 import ComingSoonBanner from "@/components/ComingSoonBanner/ComingSoonBanner";
+import { useMutation } from "@apollo/client";
+import { CreateTag } from "@/app/graphql/mutations";
 
 interface ITagSectionProps {
   tags: Tag[];
@@ -14,9 +16,21 @@ const TagSection: React.FC<ITagSectionProps> = ({ tags }) => {
   const [newTagName, setNewTagName] = useState("");
   const [newTagColor, setNewTagColor] = useState(colors[0]);
 
+  const [createTag] = useMutation(CreateTag, {
+    refetchQueries: ["GetAllTags"],
+    onCompleted: (data) => {
+      console.log("Tag created:", data.createTag);
+    },
+    onError: (error) => {
+      console.error("Error creating tag:", error);
+    },
+  });
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log({ newTagName, newTagColor });
+    createTag({
+      variables: { name: newTagName, color: newTagColor.toLocaleLowerCase() },
+    });
   };
 
   const handleClearClick = () => {
