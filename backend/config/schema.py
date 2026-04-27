@@ -1,5 +1,6 @@
 import graphene
 
+from cards.schema import Mutation as CardsMutation
 from cards.schema import Query as CardsQuery
 
 
@@ -10,4 +11,8 @@ class Query(CardsQuery, graphene.ObjectType):
         return "ok"
 
 
-schema = graphene.Schema(query=Query)
+class Mutation(CardsMutation, graphene.ObjectType):
+    pass
+
+
+schema = graphene.Schema(query=Query, mutation=Mutation)
