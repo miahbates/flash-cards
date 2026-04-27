@@ -28,7 +28,7 @@ const TagSection: React.FC<ITagSectionProps> = ({ tags }) => {
     <section>
       <div className={styles.tagSection}>
         <div className={styles.tagSectionCard}>
-          <form className={styles.tagForm}>
+          <form onSubmit={handleSubmit} className={styles.tagForm}>
             <div className={styles.formGroup}>
               <label className={styles.colorLabel} htmlFor="new-tag">
                 Add a new tag
@@ -46,7 +46,7 @@ const TagSection: React.FC<ITagSectionProps> = ({ tags }) => {
               <p className={styles.colorLabel}>Color</p>
               <div className={styles.colorOptions}>
                 {colors.map((color) => (
-                  <div
+                  <button
                     key={color}
                     className={styles.colorOption}
                     data-color={color}
@@ -61,11 +61,7 @@ const TagSection: React.FC<ITagSectionProps> = ({ tags }) => {
               </div>
             </div>
             <div className={styles.formButtons}>
-              <button
-                type="submit"
-                onClick={handleSubmit}
-                className={styles.saveButton}
-              >
+              <button type="submit" className={styles.saveButton}>
                 Save
               </button>
               <button
@@ -79,27 +75,28 @@ const TagSection: React.FC<ITagSectionProps> = ({ tags }) => {
           </form>
         </div>
         <div className={styles.tagSectionCard}>
-          <p className={styles.title}>Tag Library</p>
+          <h2 className={styles.title}>Tag Library</h2>
           <p className={styles.description}>
             Create once, reuse when adding or editing cards.
           </p>
-          <div className={styles.existingTags}>
+          <ul className={styles.existingTags}>
             {tags.map((tag) => (
-              <div
-                key={tag.id}
-                onClick={() =>
-                  selectedTag === tag.id
-                    ? setSelectedTag("")
-                    : setSelectedTag(tag.id)
-                }
-                className={styles.tagCard}
-                data-color={tag.color}
-                data-selected={selectedTag === tag.id}
-              >
-                <span className={styles.tagName}>{tag.name}</span>
-              </div>
+              <li key={tag.id} className={styles.tagListItem}>
+                <button
+                  onClick={() =>
+                    selectedTag === tag.id
+                      ? setSelectedTag("")
+                      : setSelectedTag(tag.id)
+                  }
+                  className={styles.tagCard}
+                  data-color={tag.color}
+                  data-selected={selectedTag === tag.id}
+                >
+                  <span className={styles.tagName}>{tag.name}</span>
+                </button>
+              </li>
             ))}
-          </div>
+          </ul>
           <ComingSoonBanner text="Tag management coming soon! 🌟" />
         </div>
       </div>

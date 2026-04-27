@@ -34,6 +34,8 @@
 }
 
 .existingTags {
+  padding: 0;
+  list-style: none;
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
@@ -134,6 +136,7 @@
   width: 36px;
   height: 24px;
   border-radius: 4px;
+  border: none;
 
   &:hover {
     cursor: pointer;
