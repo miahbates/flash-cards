@@ -6,7 +6,7 @@ import styles from "./AppHeader.module.css";
 
 const navItems = [
   { href: "/deck", label: "Deck" },
-  { href: "/cards/new", label: "Add card" },
+  { href: "/cards", label: "Add card" },
   { href: "/tags", label: "Tags" },
 ];
 

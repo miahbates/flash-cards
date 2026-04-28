@@ -33,7 +33,7 @@ const TagSection: React.FC<ITagSectionProps> = ({ tags }) => {
     });
   };
 
-  const handleClearClick = () => {
+  const handleClear = () => {
     setNewTagName("");
     setNewTagColor(colors[0]);
   };
@@ -80,7 +80,7 @@ const TagSection: React.FC<ITagSectionProps> = ({ tags }) => {
               </button>
               <button
                 type="button"
-                onClick={handleClearClick}
+                onClick={handleClear}
                 className={styles.clearButton}
               >
                 Clear
@@ -95,7 +95,7 @@ const TagSection: React.FC<ITagSectionProps> = ({ tags }) => {
           </p>
           <ul className={styles.existingTags}>
             {tags.map((tag) => (
-              <li key={tag.id} className={styles.tagListItem}>
+              <li key={tag.id}>
                 <button
                   onClick={() =>
                     selectedTag === tag.id

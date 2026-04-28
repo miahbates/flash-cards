@@ -1,0 +1,208 @@
+.cardSection {
+  margin-top: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+
+  @media (max-width: 670px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.cardSectionCard {
+  background: #fff;
+  border-radius: 8px;
+  padding: 24px;
+  width: 100%;
+  height: 350px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.06);  
+}
+
+.formButtons {
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.saveButton {
+  padding: 8px 24px;
+  color: white;
+  background-color: #0f766e;
+  border: 1px solid #0f766e;
+  font-weight: 600;
+  border-radius: 8px;
+
+  &:hover {
+    background-color: #0c5c5a;
+    border-color: #0c5c5a;
+    cursor: pointer;
+  }
+}
+
+.clearButton {
+  padding: 8px 24px;
+  background-color: #ffff;
+  color: #3f4652;
+  border: 1px solid #eef0f3;
+  border-radius: 8px;
+  font-weight: 600;
+
+  &:hover {
+    background-color: #f0f0f0;
+    cursor: pointer;
+  }
+}
+
+.existingTags {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.tagCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  width: 100px;
+  height: 28px;
+  border: 1px solid #ddd;
+  margin-top: 8px;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &[data-color="CLAY"] {
+    background-color: #EAD7CC;
+    color: #A05A2C;
+    border: 1px solid #A05A2C;
+
+    &[data-selected="true"] {
+      background-color: #A05A2C;
+      color: #fff;
+    }
+
+    &:hover {
+      background-color: #A05A2C;
+      color: #fff;
+    }
+  }
+
+  &[data-color="LAVENDER"] {
+    background-color: #E8D9F1;
+    color: #9B7BAE;
+    border: 1px solid #9B7BAE;
+
+    &[data-selected="true"] {
+      background-color: #9B7BAE;
+      color: #fff;
+    }
+
+    &:hover {
+      background-color: #9B7BAE;
+      color: #fff;
+    }
+  }
+
+  &[data-color="MINT"] {
+    background-color: #D7EFE0;
+    color: #5EAD7D;
+    border: 1px solid #5EAD7D;
+
+    &[data-selected="true"] {
+      background-color: #5EAD7D;
+      color: #fff;
+    }
+
+    &:hover {
+      background-color: #5EAD7D;
+      color: #fff;
+    }
+  }
+
+  &[data-color="SAGE"] {
+    background-color: #E1E0D1;
+    color: #727156;
+    border: 1px solid #727156;
+
+    &[data-selected="true"] {
+      background-color: #727156;
+      color: #fff;
+    }
+
+    &:hover {
+      background-color: #727156;
+      color: #fff;
+    }
+  }
+
+  &[data-color="OCHRE"] {
+    background-color: #F0E5B8;
+    color: #A88C1F;
+    border: 1px solid #A88C1F;
+
+    &[data-selected="true"] {
+      background-color: #A88C1F;
+      color: #fff;
+    }
+
+    &:hover {
+      background-color: #A88C1F;
+      color: #fff;
+    }
+  }
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.cardInput {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f5f5f5;
+
+  &:focus {
+    outline: none;
+    border-color: #0f766e;
+    background-color:  #f5f5f5;
+  }
+}
+
+.cardForm {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.label {
+  margin-bottom: 8px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.checkIcon {
+  height: 16px;
+  width: 16px;
+  margin-left: 4px;
+  opacity: 0;
+  transform: scale(0.75);
+  animation: tickIn 160ms ease-out forwards;
+}
+
+@keyframes tickIn {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

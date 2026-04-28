@@ -19,7 +19,7 @@ describe("AppHeader", () => {
     );
     expect(screen.getByRole("link", { name: /add card/i })).toHaveAttribute(
       "href",
-      "/cards/new",
+      "/cards",
     );
     expect(screen.getByRole("link", { name: /tags/i })).toHaveAttribute(
       "href",
