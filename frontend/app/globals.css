@@ -83,7 +83,7 @@ body {
 }
 
 h1 {
-  font-size: clamp(2.5rem, 7vw, 5.5rem);
+  font-size: 48px;
   line-height: 0.95;
   margin: 0;
   max-width: 10ch;
@@ -91,10 +91,11 @@ h1 {
 
 .lede {
   color: #3f3f46;
-  font-size: 1.25rem;
+  font-size: 1rem;
   line-height: 1.6;
-  margin: 24px 0 0;
+  margin: 12px 0 0;
   max-width: 620px;
+  font-style: italic;
 }
 
 .status {
@@ -211,5 +212,6 @@ h1 {
   .app-header__nav {
     flex-wrap: wrap;
     width: 100%;
+    justify-content: center;
   }
 }
