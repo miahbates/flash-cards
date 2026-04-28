@@ -27,7 +27,7 @@ export default function CardsPage() {
           Add a card
         </h1>
         <p className={pageStyles.lede}>
-          Create the question, answer, and category in one focused view.
+          Create the name, description, and category in one focused view.
         </p>
       </section>
       <CardSection tags={data?.allTags || []} />
