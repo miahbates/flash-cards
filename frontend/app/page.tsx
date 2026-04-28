@@ -1,3 +1,6 @@
+import styles from "./home.module.css";
+import pageStyles from "./pageStyles.module.css";
+
 const instructions = [
   {
     id: 1,
@@ -18,16 +21,20 @@ const instructions = [
 
 export default function Home() {
   return (
-    <main className="page">
-      <section className="intro" aria-labelledby="page-title">
-        <p className="eyebrow">Flash cards</p>
-        <h1 id="page-title">Miah's flash cards</h1>
-        <p className="lede">This is a starter project for a flash cards.</p>
+    <main className={pageStyles.page}>
+      <section aria-labelledby="page-title">
+        <p className={pageStyles.eyebrow}>Flash cards</p>
+        <h1 className={pageStyles.title} id="page-title">
+          Miah's flash cards
+        </h1>
+        <p className={pageStyles.lede}>
+          This is a starter project for a flash cards.
+        </p>
       </section>
 
-      <section className="cards" aria-label="Starter cards">
+      <section className={styles.cards} aria-label="Starter cards">
         {instructions.map((instruction) => (
-          <article className="card" key={instruction.id}>
+          <article className={styles.card} key={instruction.id}>
             <span>#{instruction.id}</span>
             <h2>{instruction.name}</h2>
             <p>{instruction.description}</p>

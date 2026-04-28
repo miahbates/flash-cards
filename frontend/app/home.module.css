@@ -1,0 +1,31 @@
+.cards {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  margin-top: 48px;
+  max-width: 920px;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #d8d8d2;
+  border-radius: 8px;
+  min-height: 180px;
+  padding: 24px;
+}
+
+.card span {
+  color: #b42318;
+  font-weight: 700;
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  margin: 24px 0 8px;
+}
+
+.card p {
+  color: #3f3f46;
+  line-height: 1.5;
+  margin: 0;
+}

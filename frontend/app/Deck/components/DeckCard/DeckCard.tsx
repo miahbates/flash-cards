@@ -1,3 +1,5 @@
+import styles from "./DeckCard.module.css";
+
 type DeckCardProps = {
   category: string;
   question: string;
@@ -5,13 +7,15 @@ type DeckCardProps = {
 
 export function DeckCard({ category, question }: DeckCardProps) {
   return (
-    <article className="deck-card">
-      <div className="deck-card__meta">
-        <span className="deck-card__category">{category}</span>
+    <article className={styles.card}>
+      <div className={styles.meta}>
+        <span className={styles.category}>{category}</span>
       </div>
-      <h2>{question}</h2>
-      <p>Say your answer first, then reveal the saved explanation.</p>
-      <div className="deck-card__actions">
+      <h2 className={styles.question}>{question}</h2>
+      <p className={styles.description}>
+        Say your answer first, then reveal the saved explanation.
+      </p>
+      <div className={styles.actions}>
         <button type="button">Reveal</button>
         <button type="button">Edit</button>
       </div>
